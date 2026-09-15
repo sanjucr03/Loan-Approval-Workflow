@@ -27,8 +27,6 @@ public class VerificationServiceImpl implements VerificationService {
 	    private final VerificationRepository verificationRepository;
 	    private final ModelMapper modelMapper;
 
-
-
 	   
 	    public LoanResponseDTO verifyDocuments(Long loanId) {
 
