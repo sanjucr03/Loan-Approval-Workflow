@@ -35,6 +35,9 @@ public class Verification {
 
     private LocalDateTime verifiedDate;
 
+
+
+
     @OneToOne
     @JoinColumn(name = "loan_id")
     private LoanApplication loanApplication;

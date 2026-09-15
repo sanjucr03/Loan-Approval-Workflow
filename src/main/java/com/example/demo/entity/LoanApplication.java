@@ -73,7 +73,10 @@ public class LoanApplication {
 	
 	@Version
 	private Long version;
-	
+
+
+
+
 	
 	@OneToOne(mappedBy = "loanApplication",
 			              cascade= CascadeType.ALL)

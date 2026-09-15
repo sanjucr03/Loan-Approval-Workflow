@@ -32,6 +32,8 @@ public class Approval {
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    private Long approvalId;
 
+
+
 	    @Enumerated(EnumType.STRING)
 	    private RiskLevel riskLevel;
 
