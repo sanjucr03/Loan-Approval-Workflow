@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class LoanApprovalWorkflowSystemApplication {
 
+
+
 	public static void main(String[] args) {
 		SpringApplication.run(LoanApprovalWorkflowSystemApplication.class, args);
 	}

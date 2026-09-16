@@ -24,11 +24,15 @@ public class AuditLog {
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    private Long auditId;
 
+
 	    private Long loanId;
+
 
 	    private String action;
 
+
 	    private String performedBy;
+
 
 	    private LocalDateTime actionTime;
 

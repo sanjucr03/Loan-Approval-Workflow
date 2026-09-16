@@ -39,33 +39,31 @@ public class LoanApplication {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long loanId;
-	
+
+
+
 	@Column(unique=true)
 	@NotBlank(message=" Application number is required")
 	private String applicationNumber;
-	
-	
+
+
+
 	@NotBlank(message=" Application name is required")
 	private String applicationName;
-	
-	
+
 	@Email
 	private String email;
-	
-	
+
 	@NotBlank
 	private String mobileNumber;
-	
-	
+
 	@NotNull
 	@DecimalMin(value="1000")
 	private BigDecimal loanAmount;
-	
-	
+
 	@NotNull
 	private Integer creditscore;
-	
-	
+
 	@Enumerated(EnumType.STRING)
 	private LoanStatus  loanStatus;
 	
@@ -74,10 +72,6 @@ public class LoanApplication {
 	@Version
 	private Long version;
 
-
-
-
-	
 	@OneToOne(mappedBy = "loanApplication",
 			              cascade= CascadeType.ALL)
 	                  

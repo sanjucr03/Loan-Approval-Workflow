@@ -29,13 +29,13 @@ public class Verification {
 
     private boolean documentVerified;
 
+
     private boolean incomeVerified;
+
 
     private String verifierName;
 
     private LocalDateTime verifiedDate;
-
-
 
 
     @OneToOne
