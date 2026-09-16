@@ -23,8 +23,6 @@ public class ApprovalController {
 	
 	 private final ApprovalService approvalService;
 
-
-
 	    @PutMapping("/{loanId}/approve")
 	    public ResponseEntity<ApiResponse<LoanResponseDTO>> approveLoan(
 	            @PathVariable Long loanId) {
@@ -38,7 +36,7 @@ public class ApprovalController {
 	                        .data(response)
 	                        .build();
 
-	        return new ResponseEntity<>(apiResponse, HttpStatus.OK);
+	        return new ResponseEntity(apiResponse, HttpStatus.OK);
 	    }
 
 	    @PutMapping("/{loanId}/reject")
@@ -56,7 +54,7 @@ public class ApprovalController {
 	                        .data(response)
 	                        .build();
 
-	        return new ResponseEntity<>(apiResponse, HttpStatus.OK);
+	        return new ResponseEntity(apiResponse, HttpStatus.OK);
 	    }
 
 }

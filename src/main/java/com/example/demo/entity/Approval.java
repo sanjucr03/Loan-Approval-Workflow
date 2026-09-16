@@ -33,16 +33,19 @@ public class Approval {
 	    private Long approvalId;
 
 
-
 	    @Enumerated(EnumType.STRING)
 	    private RiskLevel riskLevel;
+
 
 	    @Enumerated(EnumType.STRING)
 	    private DecisionStatus decisionStatus;
 
+
 	    private String remarks;
 
+
 	    private LocalDateTime decisionDate;
+
 
 	    @OneToOne
 	    @JoinColumn(name = "loan_id")
